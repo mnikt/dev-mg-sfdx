@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>WebinarController</members>
+        <members>WebinarTriggerHandler</members>
+        <members>WebinarTriggerHandlerTest</members>
+        <members>AccountCreateTriggerHandler</members>
+        <members>AccountDeletionTest</members>
+        <members>AutoNotifications</members>
+        <members>ChatterNotificationBatchClass</members>
+        <members>DeactivateAccounts</members>
+        <members>DuplicateMerge</members>
+        <members>InsertCaseHandler</members>
+        <members>QuestionnaireController</members>
+        <members>RandomUser</members>
+        <members>TEST_DataFactory</members>
+        <members>Test</members>
+        <members>WebinarListController</members>
+        <members>WebinarTeamMemberTriggerHandler</members>
+        <members>WebinarTriggerTest</members>
+        <members>scheduledChatterNotifications</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>WebinarEvent__e</members>
+        <members>Webinar_Team_Member__c</members>
+        <members>Webinar__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <name>ListView</name>
+    </types>
     <version>55.0</version>
 </Package>
