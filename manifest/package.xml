@@ -4,6 +4,21 @@
         <members>WebinarController</members>
         <members>WebinarTriggerHandler</members>
         <members>WebinarTriggerHandlerTest</members>
+        <members>AccountCreateTriggerHandler</members>
+        <members>AccountDeletionTest</members>
+        <members>AutoNotifications</members>
+        <members>ChatterNotificationBatchClass</members>
+        <members>DeactivateAccounts</members>
+        <members>DuplicateMerge</members>
+        <members>InsertCaseHandler</members>
+        <members>QuestionnaireController</members>
+        <members>RandomUser</members>
+        <members>TEST_DataFactory</members>
+        <members>Test</members>
+        <members>WebinarListController</members>
+        <members>WebinarTeamMemberTriggerHandler</members>
+        <members>WebinarTriggerTest</members>
+        <members>scheduledChatterNotifications</members>
         <name>ApexClass</name>
     </types>
     <types>
