@@ -1,0 +1,29 @@
+<!--
+ - Created by mgieron on 12.07.2022.
+ -->
+
+<!-- Questionnaire Creator -->
+<template>
+    <lightning-card title={title}>
+        <form onsubmit={onFormSubmit}>
+            <lightning-input name="didUserAttend" onchange={attendanceFieldChange} label="Did you attend to webinar?" type="checkbox"></lightning-input>
+            <lightning-input name="age" label="Your age" type="number" required="true"></lightning-input>
+            <lightning-input name="score" label="Your score" min="1" max="10" type="range"></lightning-input>
+            <lightning-input name="feedbackComment" label="Feedback comments"></lightning-input>
+            <lightning-input name="wouldRecommend" onchange={recommendationFieldChange} label="Would you recommend this webinar?" type="checkbox" checked="true"></lightning-input>
+            <template if:false={isWebinarRecommended}>
+                <lightning-input name="recommendationReason" label="Why not?"></lightning-input>
+            </template>
+            <lightning-input name="webinarId" value={recordId} label="Webinar" read-only="true"></lightning-input>
+
+            <lightning-button type="submit" variant="neutral" label="Create"></lightning-button>
+        </form>
+        <template if:false={isTableVisible}>
+            <lightning-button label="Show my questionnaires" onclick={showTable}></lightning-button>
+        </template>
+        <template if:true={isTableVisible}>
+            <c-questionnaires-table user-id={userId}></c-questionnaires-table>
+            <lightning-button label="Close" onclick={hideTable}></lightning-button>
+        </template>
+    </lightning-card>
+</template>
